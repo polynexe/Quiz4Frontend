@@ -21,6 +21,7 @@ function DetailScreen() {
                 <ListGroup.Item>
                     <h3>{projects.name}</h3>
                 </ListGroup.Item>
+                <strong>Project:</strong>
                 <ListGroup.Item>
                     <h3>{projects.description}</h3>
                 </ListGroup.Item>
@@ -28,6 +29,20 @@ function DetailScreen() {
                 <ListGroup.Item>{projects.hours_consumed}</ListGroup.Item>
                 <ListGroup.Item>{projects.start_date}</ListGroup.Item>
                 <ListGroup.Item>{projects.end_date}</ListGroup.Item>
+
+                <strong>Task:</strong>
+                <ListGroup.Item>
+                    <h3>{projects.description}</h3>
+                </ListGroup.Item>
+                <ListGroup.Item>{projects.task_name}</ListGroup.Item>
+                <ListGroup.Item>{projects.task_description}</ListGroup.Item>
+                <ListGroup.Item>{projects.status}</ListGroup.Item>
+                <ListGroup.Item>{projects.hours_consumed}</ListGroup.Item>
+                <ListGroup.Item>{projects.user}</ListGroup.Item>
+                <ListGroup.Item>{projects.start_date}</ListGroup.Item>
+                <ListGroup.Item>{projects.end_date}</ListGroup.Item>
+
+
             </ListGroup>
         </Col>
     </Row>
