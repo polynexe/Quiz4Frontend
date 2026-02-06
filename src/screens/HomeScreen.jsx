@@ -4,9 +4,20 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {Row, Col} from 'react-bootstrap';
+import {useDispatch, useSelector} from 'react-redux';
+import { useEffect } from 'react';
+import {listProjects} from '../actions/projectActions';
 
 
-export default function AccordionExpandIcon() {
+export default function HomeScreen() {
+    const dispatch = useDispatch();
+    const projectList = useSelector((state) => state.projectList);
+    const {loading, error, projects} = projectList;
+
+    useEffect(() => {
+        dispatch(listProjects());
+    }, []);
+
 return (
 <div>
     <Row className="mb-3" py={3}>

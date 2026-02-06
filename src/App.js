@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import DetailScreen from "./screens/DetailScreen";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         
         <Routes>
           <Route path="/" element={<HomeScreen />} exact />
+          <Route path="/project/:id" element={<DetailScreen />} />
         </Routes>
 
       </main>
