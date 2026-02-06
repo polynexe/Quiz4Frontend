@@ -1,12 +1,13 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HomeScreen from "./screens/HomeScreen";
 
 function App() {
   return (
     <div>
       <Header />
       <main>
-        <h1>Hello World</h1>
+        <HomeScreen />
       </main>
       <Footer />
     </div>
