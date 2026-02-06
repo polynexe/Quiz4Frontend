@@ -4,7 +4,7 @@ import {
     PROJECT_LIST_FAIL
 } from '../constants/projectConstants.js';
 
-export const projectsReducer = (state = {projects: []}, action) => {
+export const projectListReducer = (state = {projects: []}, action) => {
     switch(action.type) {
         case PROJECT_LIST_REQUEST:
             return { loading: true, projects: [] }
@@ -15,4 +15,4 @@ export const projectsReducer = (state = {projects: []}, action) => {
         default:
             return state
     }
-} 
+}  

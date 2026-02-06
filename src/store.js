@@ -13,7 +13,7 @@ const middleware = [thunk];
 const store = configureStore({
     reducer,
     initialState,
-    middleware,
+    // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
 });
 
 export default store;

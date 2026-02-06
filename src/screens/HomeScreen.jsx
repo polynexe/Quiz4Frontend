@@ -28,7 +28,11 @@ return (
                 </AccordionSummary>
                 <AccordionDetails>
                     <Row>
-                        
+                        {projects.map((project) => (
+                            <Col key={project._id} sm={12} md={6} lg={4} xl={3}>
+                                <Typography component="span">{project.name}</Typography>
+                            </Col>
+                        ))}
                     </Row>
                 </AccordionDetails>
             </Accordion>
