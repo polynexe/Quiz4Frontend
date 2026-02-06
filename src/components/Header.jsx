@@ -6,7 +6,7 @@ function Header() {
 return (
 <Navbar expand="lg" bg="primary" variant="dark" collapseOnSelect>
     <Container>
-    <Navbar.Brand href='#home' to="#home ">Click Up</Navbar.Brand>
+    <Navbar.Brand href='#' to="#home ">Click Up</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
