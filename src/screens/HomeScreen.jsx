@@ -2,19 +2,14 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {Row, Col} from 'react-bootstrap';
+
 
 export default function AccordionExpandIcon() {
 return (
 <div>
-    <h1 className="my-3" sm={12} md={6} lg={4} xl={3}>Latest Projects</h1>
-    {loading ? (
-    <Loader />
-    ) : error ? (
-    <Message variant='danger'>{error}</Message>
-    <Row className="mb-3">
+    <Row className="mb-3" py={3}>
         <Col className="text-center">
             <Accordion>
                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel2-content"id="panel2-header">
@@ -58,7 +53,6 @@ return (
             </Accordion>
         </Col>
     </Row>
-   
 </div>
 );
 }
